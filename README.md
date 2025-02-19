@@ -13,5 +13,5 @@ https://github.com/keycloak/keycloak/blob/main/server-spi-private/src/main/java/
 
 
 
-![Role Example Part 1](docs/1.jpg)
+![Role Example Part 1](docs/1.png)
 
