@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weiterleitung Login</title>
+<!-- DR-B Framework Libs -->
+<script type="text/javascript"
+	src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    setCookie("ConditionalCookie",1);
+    $(location).prop('href', '/openidconnect.php');
+	});
+   
+  function setCookie(name,value) {
+    var expires = "";
+    var date = new Date();
+    date.setTime(date.getTime() + (15*60*1000));
+    expires = "; expires=" + date.toUTCString();
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+</script>
+</head>
+<body>
+</body>
+</html>
